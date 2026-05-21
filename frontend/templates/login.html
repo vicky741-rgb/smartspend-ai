@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Login - SmartSpend AI{% endblock %}
+{% block body %}
+<main class="auth-page">
+  <section class="auth-card glass">
+    <a class="brand" href="/"><span class="brand-mark">$</span><span>SmartSpend AI</span></a>
+    <div class="tabs"><button class="active" data-auth-tab="login">Login</button><button data-auth-tab="register">Register</button><button data-auth-tab="forgot">Forgot</button></div>
+    <form id="loginForm" class="auth-form">
+      <h1>Welcome back</h1>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="password" type="password" placeholder="Password" required>
+      <button class="btn primary" type="submit">Login</button>
+      <p class="form-note">Demo: demo@smartspend.ai / Demo@12345</p>
+    </form>
+    <form id="registerForm" class="auth-form hidden">
+      <h1>Create account</h1>
+      <input name="name" placeholder="Full name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="password" type="password" placeholder="Password" minlength="8" required>
+      <button class="btn primary" type="submit">Register</button>
+    </form>
+    <form id="forgotForm" class="auth-form hidden">
+      <h1>Reset password</h1>
+      <input name="email" type="email" placeholder="Email" required>
+      <button class="btn primary" type="submit">Send reset link</button>
+    </form>
+    <p id="authMessage" class="toast-line"></p>
+  </section>
+</main>
+{% endblock %}

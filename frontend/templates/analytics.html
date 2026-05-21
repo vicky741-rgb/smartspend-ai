@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Analytics - SmartSpend AI{% endblock %}
+{% block body %}
+<div class="app-shell">
+  {% include "partials_nav.html" %}
+  <main class="workspace">
+    <header class="page-head"><div><p class="eyebrow">Machine learning insights</p><h1>Analytics</h1></div></header>
+    <section class="grid-two">
+      <article class="panel glass"><h2>Monthly Comparison</h2><canvas id="monthlyChart"></canvas></article>
+      <article class="panel glass"><h2>Forecast by Category</h2><div id="forecastChart"></div></article>
+    </section>
+    <section class="panel glass"><h2>Financial Health</h2><div id="healthScore" class="health-score">0</div><div id="analyticsTips" class="recommendations"></div></section>
+  </main>
+</div>
+{% endblock %}
+{% block scripts %}<script>SmartSpend.analytics();</script>{% endblock %}

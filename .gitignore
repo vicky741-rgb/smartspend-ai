@@ -1,0 +1,11 @@
+.env
+*.pyc
+__pycache__/
+.venv/
+venv/
+instance/
+*.db
+*.sqlite
+*.sqlite3
+.streamlit/secrets.toml
+smartspend-project.zip

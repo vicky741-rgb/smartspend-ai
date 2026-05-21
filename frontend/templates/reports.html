@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Reports - SmartSpend AI{% endblock %}
+{% block body %}
+<div class="app-shell">
+  {% include "partials_nav.html" %}
+  <main class="workspace">
+    <header class="page-head"><div><p class="eyebrow">Monthly reporting</p><h1>Reports</h1></div></header>
+    <section class="panel glass report-actions">
+      <a class="btn primary" href="/api/reports/pdf">Download PDF</a>
+      <a class="btn ghost" href="/api/reports/csv">Export CSV</a>
+    </section>
+    <section class="panel glass"><h2>Smart AI Assistant</h2><div id="reportAssistant" class="recommendations">Loading personalized saving plan...</div></section>
+  </main>
+</div>
+{% endblock %}
+{% block scripts %}<script>SmartSpend.reports();</script>{% endblock %}

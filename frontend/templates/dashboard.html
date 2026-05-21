@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - SmartSpend AI{% endblock %}
+{% block body %}
+<div class="app-shell">
+  {% include "partials_nav.html" %}
+  <main class="workspace">
+    <header class="page-head"><div><p class="eyebrow">Personal finance command center</p><h1>Dashboard</h1></div><button class="btn ghost" id="refreshDashboard">Refresh</button></header>
+    <section class="metric-grid">
+      <article class="metric glass" data-metric="budget"><span>Monthly Budget</span><b>$0</b></article>
+      <article class="metric glass" data-metric="expenses"><span>Total Expenses</span><b>$0</b></article>
+      <article class="metric glass" data-metric="remaining"><span>Remaining Balance</span><b>$0</b></article>
+      <article class="metric glass" data-metric="prediction"><span>Predicted Future Expenses</span><b>$0</b></article>
+    </section>
+    <section class="grid-two">
+      <article class="panel glass"><h2>Expense Breakdown</h2><canvas id="categoryChart"></canvas></article>
+      <article class="panel glass"><h2>Daily Spending</h2><canvas id="dailyChart"></canvas></article>
+    </section>
+    <section class="grid-two">
+      <article class="panel glass"><h2>Budget Utilization</h2><div id="gaugeChart"></div></article>
+      <article class="panel glass"><h2>AI Recommendations</h2><div id="recommendations" class="recommendations"></div></article>
+    </section>
+  </main>
+</div>
+{% endblock %}
+{% block scripts %}<script>SmartSpend.dashboard();</script>{% endblock %}

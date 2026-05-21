@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}SmartSpend AI - Track Your Spending Smartly{% endblock %}
+{% block body %}
+<main class="welcome">
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">$</span><span>SmartSpend AI</span></a>
+    <div class="top-actions"><a href="/login" class="btn ghost">Login</a><a href="/login" class="btn primary">Start Free</a></div>
+  </header>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">AI powered finance control</p>
+      <h1>Track Your Spending Smartly</h1>
+      <p>Budgets, alerts, predictive analytics, reports, and financial health insights in one secure real-time dashboard.</p>
+      <div class="cta-row"><a class="btn primary" href="/login">Create Account</a><a class="btn ghost" href="#preview">View Dashboard</a></div>
+    </div>
+    <div class="finance-orbit glass">
+      <div class="coin one">$</div><div class="coin two">%</div><div class="coin three">AI</div>
+      <div class="mini-chart"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="saving-chip">Savings +18%</div>
+      <div class="alert-chip">Budget 82%</div>
+    </div>
+  </section>
+  <section class="feature-grid">
+    <article class="feature glass"><b>Green savings</b><span>Celebrate improvement against last month.</span></article>
+    <article class="feature glass"><b>Red overspend alerts</b><span>Instant warnings before debt sneaks up.</span></article>
+    <article class="feature glass"><b>Orange budget limits</b><span>Know when money is fully allocated.</span></article>
+    <article class="feature glass"><b>Blue analytics</b><span>Forecast future expenses with ML models.</span></article>
+  </section>
+  <section id="preview" class="dashboard-preview glass">
+    <div><p class="eyebrow">Live insight preview</p><h2>Fintech clarity without spreadsheet fatigue</h2></div>
+    <div class="preview-bars"><span style="height:55%"></span><span style="height:82%"></span><span style="height:40%"></span><span style="height:70%"></span><span style="height:48%"></span></div>
+  </section>
+</main>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Admin - SmartSpend AI{% endblock %}
+{% block body %}
+<div class="app-shell">
+  {% include "partials_nav.html" %}
+  <main class="workspace">
+    <header class="page-head"><div><p class="eyebrow">Platform control</p><h1>Admin Dashboard</h1></div></header>
+    <section class="metric-grid"><article class="metric glass"><span>Total Users</span><b id="adminUsers">0</b></article><article class="metric glass"><span>Total Expenses</span><b id="adminExpenses">$0</b></article><article class="metric glass"><span>Inactive Users</span><b id="adminInactive">0</b></article></section>
+    <section class="panel glass"><h2>User Management</h2><div class="table-wrap"><table><thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Verified</th></tr></thead><tbody id="adminRows"></tbody></table></div></section>
+  </main>
+</div>
+{% endblock %}
+{% block scripts %}<script>SmartSpend.admin();</script>{% endblock %}

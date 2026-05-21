@@ -1,0 +1,14 @@
+<aside class="sidebar glass">
+  <a class="brand" href="/dashboard"><span class="brand-mark">$</span><span>SmartSpend AI</span></a>
+  <nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/expenses">Expenses</a>
+    <a href="/analytics">Analytics</a>
+    <a href="/reports">Reports</a>
+    <a href="/notifications">Notifications</a>
+    <a href="/profile">Profile</a>
+    {% if user and user.role == 'admin' %}<a href="/admin">Admin</a>{% endif %}
+  </nav>
+  <button class="icon-row" id="themeToggle" type="button">Toggle Theme</button>
+  <a class="logout" href="/logout">Logout</a>
+</aside>
