@@ -54,11 +54,6 @@ For Gmail, use an app password instead of your normal account password.
 - ML prediction service using generated or imported finance datasets
 - Streamlit analytics companion at `streamlit_app.py`
 
-## Optional Streamlit Dashboard
-
-```powershell
-streamlit run streamlit_app.py
-```
 
 ## Notes
 
