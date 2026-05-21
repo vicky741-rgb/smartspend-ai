@@ -58,31 +58,31 @@ For Gmail, use an app password instead of your normal account password.
 
 ## Dashboard
 
-![Dashboard](screen shots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
 ## Expense Manager
 
-![Expense Manager](screen shots/expensesmanager.png)
+![Expense Manager](screenshots/expensesmanager.png)
 
 ---
 
 ## Reports
 
-![Reports](screen shots/reports.png)
+![Reports](screenshots/reports.png)
 
 ---
 
 ## Login Interface
 
-![Login](screen shots/loginpage.png)
+![Login](screenshots/loginpage.png)
 
 ---
 
 ## Real Time Notification
 
-![Notification](screen shots/realtimenotification.png)
+![Notification](screenshots/realtimenotification.png)
 
 ## Notes
 
