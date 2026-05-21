@@ -64,7 +64,7 @@ For Gmail, use an app password instead of your normal account password.
 
 ## Expense Manager
 
-![Expense Manager](screenshots/expensesmanager.png)
+![Expense Manager](screenshots/expansesmanager.png)
 
 ---
 
