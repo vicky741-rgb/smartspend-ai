@@ -55,21 +55,34 @@ For Gmail, use an app password instead of your normal account password.
 - Streamlit analytics companion at `streamlit_app.py`
 # SmartSpend AI
 
-## Login Page
-![Login](screenshots/login.png)
 
 ## Dashboard
-![Dashboard](screenshots/dashboard.png)
 
-## Analytics
-![Analytics](screenshots/analytics.png)
+![Dashboard](screen shots/dashboard.png)
 
-## Prediction
-![Prediction](screenshots/prediction.png)
+---
 
-## Add Expense
-![Expense](screenshots/add_expense.png)
+## Expense Manager
 
+![Expense Manager](screen shots/expensesmanager.png)
+
+---
+
+## Reports
+
+![Reports](screen shots/reports.png)
+
+---
+
+## Login Interface
+
+![Login](screen shots/loginpage.png)
+
+---
+
+## Real Time Notification
+
+![Notification](screen shots/realtimenotification.png)
 
 ## Notes
 
