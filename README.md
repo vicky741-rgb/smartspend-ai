@@ -53,6 +53,22 @@ For Gmail, use an app password instead of your normal account password.
 - Admin analytics and user management view
 - ML prediction service using generated or imported finance datasets
 - Streamlit analytics companion at `streamlit_app.py`
+# SmartSpend AI
+
+## Login Page
+![Login](screenshots/login.png)
+
+## Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+## Analytics
+![Analytics](screenshots/analytics.png)
+
+## Prediction
+![Prediction](screenshots/prediction.png)
+
+## Add Expense
+![Expense](screenshots/add_expense.png)
 
 
 ## Notes
