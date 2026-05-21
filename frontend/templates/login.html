@@ -10,6 +10,9 @@
       <input name="email" type="email" placeholder="Email" required>
       <input name="password" type="password" placeholder="Password" required>
       <button class="btn primary" type="submit">Login</button>
+      <button type="button" id="googleLogin" class="btn primary">
+  Continue with Google
+</button>
       <p class="form-note">Demo: demo@smartspend.ai / Demo@12345</p>
     </form>
     <form id="registerForm" class="auth-form hidden">
@@ -27,4 +30,46 @@
     <p id="authMessage" class="toast-line"></p>
   </section>
 </main>
+
+
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+  import {
+    getAuth,
+    GoogleAuthProvider,
+    signInWithPopup
+  } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBBW1BJaMupNDLxWYab02ZRYhZZXclurAs",
+    authDomain: "smartspend-ai-8f560.firebaseapp.com",
+    projectId: "smartspend-ai-8f560",
+    storageBucket: "smartspend-ai-8f560.firebasestorage.app",
+    messagingSenderId: "545970423612",
+    appId: "1:545970423612:web:beeb9debf9c554fb7ec039",
+    measurementId: "G-TZG5XBFT01"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  document.getElementById("googleLogin").addEventListener("click", async () => {
+    try {
+      const result = await signInWithPopup(auth, provider);
+
+      const user = result.user;
+
+      alert("Welcome " + user.displayName);
+
+      alert("Google Login Successful");
+
+    } catch (error) {
+      console.error(error);
+      alert(error.message);
+    }
+  });
+</script>
 {% endblock %}
